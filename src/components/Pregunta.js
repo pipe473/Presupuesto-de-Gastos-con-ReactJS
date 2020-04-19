@@ -7,9 +7,9 @@ const [ cantidad, guardarCantidad ] = useState(0);
 
 //Funcion que lee el presupuesto
     const definirPresupuesto = e => {
-        console.log(e.target.value);        
+        console.log(parseInt(e.target.value));        
     }
-    
+
   return (
     <Fragment>
       <h2>Añade tu presupuesto</h2>
