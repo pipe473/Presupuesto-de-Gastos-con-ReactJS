@@ -7,7 +7,7 @@ const [ cantidad, guardarCantidad ] = useState(0);
 
 //Funcion que lee el presupuesto
     const definirPresupuesto = e => {
-        console.log(parseInt(e.target.value));        
+        guardarCantidad( parseInt(e.target.value, 10) )        
     }
 
   return (
