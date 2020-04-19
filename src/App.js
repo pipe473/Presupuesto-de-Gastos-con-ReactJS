@@ -1,9 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-function App() {
+function App () {
   return (
-    <h1>Presusupuesto</h1>
-  );
+    <div className='container'>
+      <header>
+        <h1>Gasto Semanal</h1>
+      </header>
+    </div>
+  )
 }
 
-export default App;
+export default App
