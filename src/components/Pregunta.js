@@ -16,7 +16,10 @@ const [ error, guardarError ] = useState(false);
         e.preventDefault();
 
         // Validar
-
+          if (cantidad < 1 || NaN( cantidad ) ) {
+            guardarError(true);
+            return;
+          }
 
         // Si se pasa la validación
     }
