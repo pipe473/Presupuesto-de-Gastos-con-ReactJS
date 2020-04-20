@@ -4,6 +4,7 @@ const Pregunta = () => {
 
 //Definir el state
 const [ cantidad, guardarCantidad ] = useState(0);
+const [ error, guardarError ] = useState(false);
 
 //Funcion que lee el presupuesto
     const definirPresupuesto = e => {
