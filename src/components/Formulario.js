@@ -6,7 +6,7 @@ const Formulario = () => {
             <h2>Agrega tus gastos aquí</h2>
 
             <div className="campo">
-                <label>Nombre Gasto</label>
+                <label>Nombre del Gasto</label>
                 <input 
                     type="text"
                     className="u-full-width"
@@ -15,7 +15,7 @@ const Formulario = () => {
             </div>
 
             <div className="campo">
-                <label>Cantidad Gasto</label>
+                <label>Cantidad a Gastar</label>
                 <input 
                     type="number"
                     className="u-full-width"
