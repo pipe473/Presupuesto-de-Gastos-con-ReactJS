@@ -4,18 +4,24 @@ import React, { useState } from 'react';
 const Formulario = () => {
     const [ nombre, guardarNombre ] = useState('');
     const [ cantidad, guardarCantidad ] = useState(0);
+    const [ error, guardarError ] = useState(false);
 
     //Cuando el usuario agrega un gasto
     const agregarGasto = e => {
         e.preventDefault();
 
         // Validar
-
+        if (cantidad < 1 || isNaN(cantidad) || nombre.trim() === '' ) {
+            guardarError(true);
+        }
 
         // Construir el gasto
 
 
-        // Pasar el gasto por el componente
+        // Pasar el gasto por el componente principal
+
+
+        // Resetear el form
     }
     return ( 
         <form
