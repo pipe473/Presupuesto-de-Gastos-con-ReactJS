@@ -5,8 +5,22 @@ const Formulario = () => {
     const [ nombre, guardarNombre ] = useState('');
     const [ cantidad, guardarCantidad ] = useState(0);
 
+    //Cuando el usuario agrega un gasto
+    const agregarGasto = e => {
+        e.preventDefault();
+
+        // Validar
+
+
+        // Construir el gasto
+
+
+        // Pasar el gasto por el componente
+    }
     return ( 
-        <form>
+        <form
+            onSubmit={agregarGasto}
+        >
             <h2>Agrega tus gastos aquí</h2>
 
             <div className="campo">
