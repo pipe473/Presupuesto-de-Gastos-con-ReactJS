@@ -24,8 +24,11 @@ const Formulario = () => {
         const gasto = {
             nombre,
             cantidad,
-            id:
+            id: shortid.generate()
         }
+
+        console.log(gasto);
+        
 
 
         // Pasar el gasto por el componente principal
