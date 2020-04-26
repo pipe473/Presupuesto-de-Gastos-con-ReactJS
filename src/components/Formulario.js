@@ -3,7 +3,7 @@ import Error from './Error';
 import shortid from 'shortid';
 
 
-const Formulario = () => {
+const Formulario = ({agregarNuevoGasto}) => {
     const [ nombre, guardarNombre ] = useState('');
     const [ cantidad, guardarCantidad ] = useState(0);
     const [ error, guardarError ] = useState(false);
@@ -25,13 +25,10 @@ const Formulario = () => {
             nombre,
             cantidad,
             id: shortid.generate()
-        }
-
-        console.log(gasto);
-        
-
+        }       
 
         // Pasar el gasto por el componente principal
+        agregarNuevoGasto(gasto);
 
 
         // Resetear el form
