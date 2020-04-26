@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import Pregunta from './components/Pregunta'
-import Formulario from './components/Formulario'
+import React, { useState } from 'react';
+import Pregunta from './components/Pregunta';
+import Formulario from './components/Formulario';
 
 function App () {
   // Definir el state
-  const [presupuesto, guardarPresupuesto] = useState(0)
-  const [restante, guardarRestante] = useState(0)
-  const [mostrarpregunta, actualizarPregunta] = useState(true)
+  const [presupuesto, guardarPresupuesto] = useState(0);
+  const [restante, guardarRestante] = useState(0);
+  const [mostrarpregunta, actualizarPregunta] = useState(true);
 
   return (
     <div className='container'>
@@ -31,7 +31,7 @@ function App () {
         </div>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

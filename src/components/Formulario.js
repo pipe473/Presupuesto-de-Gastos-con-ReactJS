@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+const Formulario = () =>{
+    const [ nombre, guardarombre ] = useState('');
+    const [ cantidad, guardarCantidad ] = useState(0);
+}
+
 const Formulario = () => {
     return ( 
         <form>

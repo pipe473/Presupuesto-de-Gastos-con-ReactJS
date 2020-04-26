@@ -23,7 +23,6 @@ const [ error, guardarError ] = useState(false);
           }
 
         // Si se pasa la validación
-
         guardarError(false);
         guardarPresupuesto(cantidad);
         guardarRestante(cantidad);
