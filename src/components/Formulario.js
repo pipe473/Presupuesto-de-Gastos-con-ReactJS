@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-const Formulario = () =>{
-    const [ nombre, guardarombre ] = useState('');
-    const [ cantidad, guardarCantidad ] = useState(0);
-}
 
 const Formulario = () => {
+    const [ nombre, guardarNombre ] = useState('');
+    const [ cantidad, guardarCantidad ] = useState(0);
+
     return ( 
         <form>
             <h2>Agrega tus gastos aquí</h2>
@@ -16,6 +15,8 @@ const Formulario = () => {
                     type="text"
                     className="u-full-width"
                     placeholder="Ej. Transporte"
+                    value={nombre}
+                    onChange={e => guardarNombre(e.target.value)}
                 />
             </div>
 
@@ -25,6 +26,8 @@ const Formulario = () => {
                     type="number"
                     className="u-full-width"
                     placeholder="Ej. 300"
+                    value={cantidad}
+                    onChange={e => guardarCantidad(e.target.value)}
                 />
             </div>
 
