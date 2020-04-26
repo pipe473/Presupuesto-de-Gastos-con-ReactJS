@@ -17,6 +17,8 @@ const Formulario = () => {
             return;
         }
 
+        guardarError(false);
+
         // Construir el gasto
 
 
