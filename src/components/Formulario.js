@@ -27,7 +27,7 @@ const Formulario = () => {
                     className="u-full-width"
                     placeholder="Ej. 300"
                     value={cantidad}
-                    onChange={e => guardarCantidad(e.target.value)}
+                    onChange={e => guardarCantidad(parseInt(e.target.value, 10))}
                 />
             </div>
 
