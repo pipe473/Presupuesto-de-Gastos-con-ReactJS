@@ -32,6 +32,8 @@ const Formulario = ({agregarNuevoGasto}) => {
 
 
         // Resetear el form
+        guardarNombre('');
+        guardarCantidad(0);
     }
     return ( 
         <form
