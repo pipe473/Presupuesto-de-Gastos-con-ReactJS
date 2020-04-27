@@ -17,7 +17,6 @@ const Formulario = ({agregarNuevoGasto}) => {
             guardarError(true);
             return;
         }
-
         guardarError(false);
 
         // Construir el gasto
@@ -35,6 +34,7 @@ const Formulario = ({agregarNuevoGasto}) => {
         guardarNombre('');
         guardarCantidad(0);
     }
+    
     return ( 
         <form
             onSubmit={agregarGasto}
