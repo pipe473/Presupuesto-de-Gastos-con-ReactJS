@@ -10,6 +10,7 @@ const Gasto = ({gasto}) =>  (
         </p>
     </li>
  );
+ 
  Gasto.propTypes = {
     gasto: PropTypes.object.isRequired
 }
