@@ -18,10 +18,7 @@ function App () {
       ...gastos,
       gasto
     ]) 
-  }, [gasto]);
-
-
- 
+  }, [gasto]); 
 
   return (
     <div className='container'>
