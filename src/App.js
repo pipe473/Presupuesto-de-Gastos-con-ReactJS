@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Pregunta from './components/Pregunta';
 import Formulario from './components/Formulario';
 import Listado from './components/Listado';
+import controlPresupuesto from './components/controlPresupuesto';
 
 function App () {
   // Definir el state
@@ -42,6 +43,8 @@ function App () {
                 <Listado 
                   gastos={gastos}
                 />
+
+                <controlPresupuesto />
                 </div>
             </div>
           )}
