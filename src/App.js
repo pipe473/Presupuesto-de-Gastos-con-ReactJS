@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Pregunta from './components/Pregunta';
 import Formulario from './components/Formulario';
 import Listado from './components/Listado';
-import controlPresupuesto from './components/controlPresupuesto';
+import ControlPresupuesto from './components/ControlPresupuesto';
 
 function App () {
   // Definir el state
@@ -44,7 +44,10 @@ function App () {
                   gastos={gastos}
                 />
 
-                <controlPresupuesto />
+                <ControlPresupuesto 
+                  presupuesto={presupuesto}
+                  restante={restante}
+                />
                 </div>
             </div>
           )}

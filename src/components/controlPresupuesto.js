@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 
-const controlPresupuesto = () => {
+const ControlPresupuesto = ({presupuesto, restante}) => {
     return ( 
         <Fragment>
             <div className="alert alert-primary">
-                Presupuesto:
+                Presupuesto: {presupuesto}€
             </div>
             <div className="presupuesto ">
-                Restante:
+                Restante: {restante}€
             </div>
         </Fragment>
      );
 }
  
-export default controlPresupuesto;
+export default ControlPresupuesto;
