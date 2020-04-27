@@ -5,6 +5,7 @@ import Listado from './components/Listado';
 import ControlPresupuesto from './components/ControlPresupuesto';
 
 function App () {
+
   // Definir el state
   const [ presupuesto, guardarPresupuesto ] = useState(0);
   const [ restante, guardarRestante ] = useState(0);
@@ -14,12 +15,18 @@ function App () {
   const [ creargasto, guardarCrearGasto ] = useState(false);
 
   //  UseEffect que actualiza el restante
-  useEffect(() =>{
+  useEffect(() => {
     if (creargasto) {
+
+      // Agrega el nuevo presupuesto
       guardarGastos([
         ...gastos,
         gasto
       ]);
+
+      // Resta el presupuesto actual
+      const presupuestoRestante = restante - gasto.cantidad;
+      guardarRestante(presupuestoRestante);
       
       // Resetear a false
       guardarCrearGasto(false);
