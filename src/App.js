@@ -39,7 +39,9 @@ function App () {
                 />
               </div>
               <div className='one-half column'>
-                <Listado />
+                <Listado 
+                  gastos={gastos}
+                />
                 </div>
             </div>
           )}
